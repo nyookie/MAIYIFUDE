@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'/>
+        <title>MAIYIFUDE</title>
+        <link rel='stylesheet' href='styles.css'/>
+    </head>
+    
+    <style type="text/css">
+        
+        .product-item:hover, .first-item:hover, .last-item:hover, button:hover{
+            display: block;
+            padding: 5px 5px 5px 5px;
+            text-transform: capitalize;
+            text-transform: uppercase;
+            text-shadow: #666666;
+            font-weight: bold;
+            color: #CC3333;
+            
+            
+        }
+        
+        .product-item:hover, .first-item:hover, .last-item:hover, button:hover{
+            color: #993366;
+            font-weight: bold;
+            transform: scale(1.05);
+           
+        }
+        
+        .product-item:active, .first-item:active, .last-item:active{
+            color: #666666;
+        }
+        
+        .product-item:visited, .first-item:visited, .last-item:visited{
+            color: #990033;
+            
+        }
+        
+
+    
+    </style>
+    
+    <script>
+        function alertWindow(){
+            alert("Item added!");
+        }
+    </script>
+    
+    <body>
+        <div class='menu-container'>
+            <div class='menu'>
+                <div class='login'><a href="login.html"><img src="img/login.png" alt="login"></a></div>
+                <div class='signup'><a href="signup.html"><img src="img/signup.png" alt="signup"></a></div>
+            </div>
+                <div class='links'>
+                    <div class='cart'><a href="mycart.html"><img src="img/mycart.png" alt="cart"></a></div>
+                </div>
+        </div>
+        
+        <div class='logo-container'>
+            <div class='logo'><img src='img/logo.png'></div>
+        </div>
+        
+        <div class='category-container'>
+            <div class='category'>
+                <div class='all-product'><a href="main.html" class='ap'>All Product</a></div>
+                <div class='top'><a href="top.html" class='to'>Top</a></div>
+                <div class='bottom'><a href="bottom.html" class='bo'>Bottom</a></div>
+            </div>
+        </div>
+        
+        <div class='product-container'>
+            <div class='product'>
+                <div class='product-item first-item'><img src="img/p6.jpg" width="300" height="300">
+                        <div class='desc'>Preloved Plaid Suit Pants<br>RM35</div>
+                        <input type="submit" value="Add To Cart" class="add-cart" onclick="alertWindow()">
+                </div>
+                  
+                <div class='product-item'><img src="img/p7.webp" width="300" height="300">
+                    <div class="box">
+                        <div class='desc'>Preloved Beige Straight Long Pants<br>RM15</div>
+                        <input type="submit" value="Add To Cart" class="add-cart" onclick="alertWindow()">
+                    </div>
+                </div>
+            
+                <div class='product-item'><img src="img/p8.jpg" width="300" height="300">
+                    <div class="box">                   
+                        <div class='desc'>Preloved Uniqlo Jeans<br>RM38</div>
+                        <input type="submit" value="Add To Cart" class="add-cart" onclick="alertWindow()">
+                    </div>
+                </div>
+ 
+                <div class='product-item'><img src="img/p3.jpeg" width="300" height="300">
+                    <div class="box">
+                        <div class='desc'>Preloved Black Suit Pants<br>RM30</div>
+                        <input type="submit" value="Add To Cart" class="add-cart" onclick="alertWindow()">
+                    </div>
+                 </div>
+                    
+                <div class='product-item'><img src="img/p9.jpg" width="300" height="300">
+                    <div class="box">
+                        <div class='desc'>Preloved Sports Trousers<br>RM20</div>
+                        <input type="submit" value="Add To Cart" class="add-cart" onclick="alertWindow()">
+                    </div>
+                </div>
+                
+                <div class='product-item last-item'><img src="img/p10.jpg" width="300" height="300">
+                    <div class="box">
+                        <div class='desc'>Preloved Zalora Wide Legged Culottes Pants<br>RM35</div>
+                        <input type="submit" value="Add To Cart" class="add-cart" onclick="alertWindow()"></div>
+                    </div>
+                </div>
+        </div>
+        
+        <div class='footer'>
+            <div class='footer-item'><span>&copy</span>2021 MAIYIFUDE. All rights reserved.</div>
+        </div>
+    
+    </body>
+</html>

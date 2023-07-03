@@ -1,0 +1,149 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times NewRoman", serif;
+}
+
+h1
+{
+    margin: 10px 15px 10px 30px;
+    color: maroon;
+}
+
+h2, a
+{
+    margin: 10px 15px 10px 15px;
+    font-size: 25px;
+    color: black;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+p 
+{
+    margin: 10px 5px 15px 15px;
+    text-align: justify;
+}
+
+.menu-container 
+{
+    color: #000000;
+    background-color: #ffe2e2; 
+    padding: 5px 0 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu 
+{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.links
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container
+{
+    width: 100%;
+    height: 200px;
+    color: maroon;
+    background-color: #EDC9AF;
+    font-family: "Lucida Handwriting", Cursive;
+    display: flex;
+    font-size: 60px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container{
+    display: flex;
+    justify-content: space-between;
+    height: 1000px;
+}
+
+.content-item{
+    background-color: white;
+    height: 1000px;
+    flex: 1;
+    padding: 10px;
+}
+
+.item-one{
+    border-right: 2px double maroon;
+    background-color: #ffd8d8;
+    flex: 1;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.item-two
+{
+    flex: 3;
+}
+
+.item-content-one
+{
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-content-two
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer 
+{
+    display: flex;
+    justify-content: center;
+    background-color: #b67162;
+}
+
+.footer-item 
+{
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    background-color: #b67162;
+}
+
+a.main
+{
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;;
+}
+
+a.main:link, a.main:visited 
+{
+  background-color: #0C4271;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.main:hover, a.main:active   
+{
+  background-color: #0A81AB;
+}

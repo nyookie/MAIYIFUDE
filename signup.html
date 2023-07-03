@@ -1,0 +1,160 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title> Sign Up</title>
+        <link rel="stylesheet" href="signup.css">
+        <script language="Javascript">
+        function valid_function()
+            {
+                var name=document.getElementById('name');
+                var email=document.getElementById('email');
+                var phone=document.getElementById('phone');
+                var password=document.getElementById('password');
+                var repassword=document.getElementById('repassword');
+                
+                if(isAlphanumeric(name, "Please enter 6-8 characters"))
+                    {
+                        if(isEmail(email, "Please use valid email"))
+                            {
+                                if(phoneNo(phone, "Please use Malaysia phone number"))
+                                    {
+                                        if(isPassword(password, repassword, "Please enter 6-8 character password", "Please enter same password"))
+                                            {
+                                                return true;
+                                            }
+                                    }      
+                            }
+                    }
+            }
+                
+                function isAlphanumeric(elem, helperMsg)
+                {
+                    var alphaExp = /^[0-9a-zA-z]+$/;
+                    if(elem.value.match(alphaExp) && (elem.value.length>=6 && elem.value.length<=8))
+                        {
+                            return true;
+                        }
+                    else
+                        {
+                            alert(helperMsg);
+                            elem.focus;
+                            return false;
+                        }
+                }
+                
+                function isEmail(elem, helperMsg)
+                {
+                    var emailExp= /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+                    if(elem.value.match(emailExp) )
+                        {
+                            return true;
+                        }
+                    else
+                        {
+                            alert(helperMsg);
+                            elem.focus;
+                            return false;
+                        }
+                }
+                
+                function phoneNo(elem, helperMsg)
+                {
+                    var numericExp=/^(01)[0-46-9]*[0-9]{7,8}$/;
+                    
+                    if(elem.value.match(numericExp))
+                        {
+		                  return true;
+	                    }
+                    else{
+		                  alert(helperMsg);
+		                  elem.focus;
+		                  return false;
+                        }
+                }
+                
+                function isPassword(elem, elem2, helperMsg, helperMsg2)
+                {
+                    var passwordExp= /^[0-9a-zA-z]+$/;
+                    if(elem.value.match(passwordExp) && (elem.value.length>=6 && elem.value.length<=8))
+                        {
+                            if(elem.value !== elem2.value)
+                                {
+                                    alert(helperMsg2);
+                                    elem.focus;
+                                    return false;
+                                    
+                                }
+                            else
+                                {
+                                    return true;
+                                }
+                        }
+         
+                     else
+                        {
+                            alert(helperMsg);
+                            elem.focus;
+                            return false;
+                        } 
+                }
+        
+        </script>
+    </head>
+    <body>
+        <div class='menu-container'>
+            <div class='menu'>
+                <div class='login'><a href="login.html"><img src="img/login.png" alt="login"></a></div>
+                <div class='signup'><a href="signup.html"><img src="img/signup.png" alt="signup"></a></div>
+            </div>
+                <div class='links'>
+                    <div class='cart'><a href="cart.php"><img src="img/mycart.png" alt="cart"></a></div>
+                </div>
+        </div>
+        
+        <div class='logo-container'>
+            <div class='logo'><a href="index.php"><img src='img/banner.png' alt="banner"></a></div>
+        </div>
+    <div class="box-container">
+        <div id="box">
+            <img src="img/signup.jpeg" width="325" height="290"><br><br>
+            
+            <form method="POST" action="finalinsertaccount.php">
+        <div class="input-box">
+            <table>
+            <tr>
+                <td><b>Name:</b></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+               <td><b>Email:</b></td>
+                <td><input type="text" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><b>Phone Number:</b></td>
+                <td><input type="text" id="phone" name="phone"></td>
+            </tr>           
+            <tr>
+                <td><b>Password:</b></td>
+                <td><input type="password" id="password" name="password"></td>
+            </tr>
+            <tr>
+                <td><b>Re-enter Password:</b></td>
+                <td><input type="password" id="repassword" name="repassword"></td>
+            </tr>
+            </table>
+                 
+            </div>
+            <br><br>
+            <input onclick="valid_function()" type=submit value="Sign Up" class="signup-button">
+        </form>
+            <br>
+        </div>
+        <br><br><br>
+    </div>
+        <div class="footer">
+            <div class="footer-item">&#169 2021 MAIYIFUDE. All rights reserved.</div>
+        </div>  
+            
+    </body>
+    </html>
+</DOCTYPE>

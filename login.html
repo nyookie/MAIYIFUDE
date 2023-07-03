@@ -1,0 +1,81 @@
+<!-- For better user experience, open me with Microsoft Edge -->
+<DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Log In</title>
+        <link rel="stylesheet" href="login.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    </head>
+    
+    <body>
+        <!-- External javascript -->
+        <script src="login.js" type="text/javascript"></script>
+        <div class="menu-container">
+            <div class="menu">
+                <div class="links">
+                    <img src="img/signup.jpeg" alt="logo" class="logo" height=50px> Log In
+                </div>
+                    <div class="links">
+                        <a href="help.html" class="help">Need help?</a></div>
+            </div>
+        </div>
+        
+        <div class="content-container">
+            <div class="content-one">
+                <img src="img/signup1.png" alt="logo" class="logo" width="50%" height=auto>
+                <br>
+                <div class="logo"><a href="index.php"><img src="img/banner2.png" alt="banner" width="80%" height=auto></a></div>
+            </div>
+            
+            <div class="content-two">
+                <div id="box">
+                <form method="post" action="checklogin.php">
+                    <div>
+                        <img src="img/login1.png" alt="login" class="login" width=40% height="auto">
+                    </div>
+                    
+                    <br><br>
+                    
+                    <div>
+                        <b>Username</b>
+                        <input type="text" class="input-box" name="name" id="name" placeholder="  Enter 6 - 8 alphanumeric username" onfocusout="valid_name()" style="font-size:16px"><br><br>
+                    </div>
+
+                    <div>
+                        <b>Password</b> 
+                        <input type="password" class="input-box" name="password" id="password" placeholder="  Enter 6 - 8 password" style="font-size:16px">
+                        <input type="checkbox" onclick="showPassword()" style="font-size:10px"> Show Password <br><br>
+                    </div>
+
+                    <!-- Login button -->
+                    <div align="center"><button>Login</button></div> 
+                  
+                    <div>
+                        <br><hr>
+                        <!-- Reset Password alert message -->
+                        <a onclick="forgotPassword()">Forgot username or password?</a>
+                    </div>
+                    
+                    <br>
+                    <div>
+                        <!-- Redirect to Sign Up page -->
+                        <p>New to here?
+                        <a href="signup.html"> Sign Up</a></p>
+                    </div>
+                </form>
+                </div>
+                <!-- Background Music -->
+                <audio autoplay controls>
+                        <source src="img/frad%20-%20first%20date.mp3" type="audio/mp3">
+                        <!-- No COPYRIGHT needed -->
+                    </audio>
+            </div>           
+        </div>
+
+        <div class="footer">
+            <div class="footer-item">&#169 2021 MAIYIFUDE. All rights reserved.</div>
+        </div>  
+    </body>
+    </html>
+</DOCTYPE>
